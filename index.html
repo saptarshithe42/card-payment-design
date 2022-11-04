@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Card Payment</title>
+
+    <!-- CSS stylesheets -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- fontawesome icon -->
+    <script src="https://kit.fontawesome.com/c4b4aa9a67.js" crossorigin="anonymous"></script>
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="placeholder">
+        <div class="card">
+            <img src="card_chip_1-removebg-preview.png" alt="card-chip" class="chip-img">
+
+            <div class="card-number-reflect-div">
+                <div class="card-number-1-div">
+                    0000
+                </div>
+                <div class="card-number-2-div">
+                    0000
+                </div>
+                <div class="card-number-3-div">
+                    0000
+                </div>
+                <div class="card-number-4-div">
+                    0000
+                </div>
+            </div>
+            <div class="card-holder-div">
+                XXXXXXXXXXXXXXXXXX
+            </div>
+
+            <div class="card-validity-reflect-div">
+
+                <div class="card-validity-1-div">
+                    XX
+                </div>
+                <div>
+                    /
+                </div>
+                <div class="card-validity-2-div">
+                    XX
+                </div>
+            </div>
+            <i class="fa-brands fa-cc-visa fa-4x card-icon"></i>
+        </div>
+
+        <div class="form-div">
+            <form action="">
+                <h1 style="text-align: center;">Payment Details</h1>
+                <label for="card_holder_name">Card Holder Name : </label>
+                <br>
+                <input type="text" name="card_holder_name" id="card-holder" autocomplete="off" class="card-input">
+                <!-- <input type="text" onkeyup="card_holder_name_func()" name="card_holder_name" id="card-holder" autocomplete="off"> -->
+                <br>
+                <br>
+
+                <label for="card_number">Card Number : </label>
+                <br>
+                <!-- <input type="text" name="card_number" id="card-number" class="card-input" autocomplete="off" maxlength="19"> -->
+                <div class="card-number-input-div">
+                    <input type="text" name="card_number" id="card-number-1" class="card-input card-number"
+                        autocomplete="off" size="4" maxlength="4">
+                    <input type="text" name="card_number" id="card-number-2" class="card-input card-number"
+                        autocomplete="off" size="4" maxlength="4">
+                    <input type="text" name="card_number" id="card-number-3" class="card-input card-number"
+                        autocomplete="off" size="4" maxlength="4">
+                    <input type="text" name="card_number" id="card-number-4" class="card-input card-number"
+                        autocomplete="off" size="4" maxlength="4">
+                </div>
+                <!-- <input type="text" onkeyup="card_number_func()" name="card_number" id="card-number"> -->
+                <br>
+                <br>
+                <div class="card-validity-cvv-div">
+                    <div style="width: 40%;">
+                        <label for="card_validity">Valid Through : </label>
+                        <br>
+                        <input type="text" name="card_validity" id="card-validity-1"
+                            class="card-input card-validity-input" autocomplete="off" maxlength="2" size="2">
+                        <input type="text" name="card_validity" id="card-validity-2"
+                            class="card-input card-validity-input" autocomplete="off" maxlength="2" size="2">
+                    </div>
+                    <div style="width: 40%;">
+                        <label for="card_cvv">CVV : </label>
+                        <br>
+                        <input type="password" name="card_cvv" id="card-cvv" maxlength="3" size="3">
+                    </div>
+                </div>
+                <div class="button-div">
+                    <button class="btn">Pay</button>
+                </div>
+        </div>
+
+        </form>
+
+    </div>
+
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
